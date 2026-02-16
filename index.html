@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>João Lucas | Desenvolvedor</title>
+
+    <style>
+        html {
+  scroll-behavior: smooth;
+}
+        body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background: radial-gradient(circle at top, #1a1a1a, #0f0f0f);
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    padding: 60px 0;
+}
+
+        .container {
+            max-width: 650px;
+            padding: 40px;
+        }
+
+        h1 {
+            font-size: 52px;
+            margin-bottom: 10px;
+        }
+
+        .nome {
+            color: #00ff88;
+        }
+
+        .linha {
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(to right, #00ff88, transparent);
+            margin: 20px 0;
+        }
+
+        p {
+            color: #b3b3b3;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .botao {
+            display: inline-block;
+            padding: 12px 28px;
+            border: 1px solid #00ff88;
+            color: #00ff88;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: 0.3s ease;
+        }
+
+        .botao:hover {
+            background-color: #00ff88;
+            color: black;
+        }
+        .projetos {
+    margin-top: 60px;
+}
+
+.projetos h2 {
+    color: #00ff88;
+    margin-bottom: 24px;
+}
+
+.card {
+    margin-top: 40px;
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+    border: 1px solid #2a2a2a;
+}
+
+.card h3 {
+    margin: 0 0 10px 0;
+}
+
+.card p {
+    color: #ccc;
+    margin: 0;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #00ff88;
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
+}
+        .skills {
+    margin-top: 60px;
+}
+
+.skills h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #00ff88;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    background-color: #1a1a1a;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+.projeto-card {
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    transition: 0.3s ease;
+}
+
+.projeto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 255, 136, 0.2);
+}
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(10, 10, 10, 0.9);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.nav-brand {
+  font-size: 18px;
+  font-weight: bold;
+  color: #00ff88;
+}
+
+.nav-links a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #ccc;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00ff88;
+}
+.sobre {
+    margin-top: 60px;
+}
+
+.sobre h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #00ff88;
+}
+
+.sobre p {
+    color: #ccc;
+    line-height: 1.6;
+    max-width: 650px;
+}
+.sobre {
+    margin-top: 80px;
+}
+
+.sobre h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #00ff88;
+}
+
+.sobre p {
+    color: #ccc;
+    line-height: 1.6;
+}
+section {
+    padding: 24px 0;
+}
+    </style>
+</head>
+
+<body>
+<header class="navbar">
+  <div class="nav-brand">João Lucas</div>
+
+  <nav class="nav-links">
+    <a href="#inicio">Início</a>
+    <a href="#skills">Skills</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#">Contato</a>
+  </nav>
+</header>
+    <div id="inicio" class="container">
+        <h1>Olá, eu sou <span class="nome">João Lucas</span></h1>
+
+        <div class="linha"></div>
+
+        <p>
+            Desenvolvedor em formação focado em criar interfaces modernas,
+            minimalistas e bem organizadas.
+        </p>
+
+        <a href="https://wa.me/5512996404758" class="botao" target="_blank">
+    Entrar em contato
+</a> 
+<section id="sobre" class="card">
+  <h2>Sobre mim</h2>
+  <p>
+    Sou um desenvolvedor em formação apaixonado por tecnologia e design.
+    Estou focado em evoluir minhas habilidades em HTML, CSS e JavaScript,
+    criando interfaces modernas, minimalistas e organizadas.
+  </p>
+</section>
+<div id="skills" class="skills">
+    <h2>Tecnologias que estou aprendendo</h2>
+
+    <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript (em breve)</li>
+    </ul>
+</div>
+<div id="projetos" class="projetos">
+    <h2>Meus Projetos</h2>
+
+    <div class="projeto-card">
+        <h3>Portfólio Pessoal</h3>
+        <p>Meu primeiro projeto utilizando HTML e CSS.</p>
+    </div>
+
+    <div class="projeto-card">
+        <h3>Em breve...</h3>
+        <p>Novos projetos serão adicionados aqui.</p>
+    </div>
+
+</div>
+
+</body>
+
+</html>
