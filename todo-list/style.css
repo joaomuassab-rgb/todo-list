@@ -183,3 +183,122 @@ h1{
   #form{ flex-direction: column; }
   #form button{ width: 100%; }
 }
+/* ===== ToDo PRO UI ===== */
+.toolbar{
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.filters{
+  display:flex;
+  gap:8px;
+  padding:6px;
+  border-radius: 14px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.12);
+}
+
+.filter{
+  border: 0;
+  background: transparent;
+  color: rgba(255,255,255,.85);
+  padding: 8px 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform .12s ease, background .12s ease;
+}
+.filter:hover{ transform: translateY(-1px); background: rgba(255,255,255,.10); }
+.filter.active{ background: rgba(0,255,140,.15); border: 1px solid rgba(0,255,140,.35); }
+
+.meta{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color: rgba(255,255,255,.85);
+  font-size: 14px;
+}
+
+button.ghost{
+  background: transparent;
+  border: 1px solid rgba(255,255,255,.22);
+  color: rgba(255,255,255,.9);
+  padding: 8px 10px;
+  border-radius: 12px;
+  cursor:pointer;
+}
+button.ghost:hover{ background: rgba(255,255,255,.08); }
+
+#list{
+  margin-top: 14px;
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+.todo{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 12px;
+  border-radius: 16px;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.10);
+  animation: pop .16s ease;
+}
+
+@keyframes pop{
+  from{ transform: scale(.98); opacity: .0;}
+  to{ transform: scale(1); opacity: 1;}
+}
+
+.todo .left{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+}
+.todo .text{
+  color: rgba(255,255,255,.95);
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.todo.done .text{
+  text-decoration: line-through;
+  opacity: .6;
+}
+
+.todo .actions{
+  display:flex;
+  gap: 8px;
+}
+
+.iconbtn{
+  border: 0;
+  cursor:pointer;
+  padding: 8px 10px;
+  border-radius: 12px;
+  color:#fff;
+  background: rgba(255,255,255,.10);
+  transition: transform .12s ease, filter .12s ease;
+}
+.iconbtn:hover{ transform: translateY(-1px); filter: brightness(1.15); }
+
+.iconbtn.danger{
+  background: rgba(255,80,80,.25);
+  border: 1px solid rgba(255,80,80,.35);
+}
+
+.empty{
+  margin-top: 14px;
+  color: rgba(255,255,255,.75);
+  font-size: 14px;
+  display:none;
+}
